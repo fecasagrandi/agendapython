@@ -5,6 +5,9 @@ from rest_framework.response import Response
 from .models import Contato
 from .serializer import ContatoSerializer   
 
+def index(request):
+    return render(request, 'index.html')
+
 # Criar Endpoints 
 @api_view(['POST'])
 def inserirContato(request):
